@@ -1,0 +1,32 @@
+
+.swiper-container {
+    width: 1200px;
+    height: 546px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    width: 250px;
+    height: 546px;
+    text-align: center;
+}
+.swiper-prev{
+    width: 54px;
+    height: 107px;
+    position: absolute;
+    left: 0;
+    top:50%;
+    z-index: 10;
+    margin-top: -50px;
+    cursor: pointer;
+}
+.swiper-next{
+    width: 54px;
+    height: 107px;
+    position: absolute;
+    right: 0;
+    top:50%;
+    z-index: 10;
+    margin-top: -50px;
+    cursor: pointer;
+}

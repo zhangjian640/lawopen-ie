@@ -1,0 +1,419 @@
+body{
+    background-color: transparent;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.app-head {
+    width: 790px;
+    height: 104px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 76px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 104px;
+    height:104px;
+    float: left;
+}
+
+.title {
+    width: 652px;
+    height: 78px;
+    float: left;
+    margin: 13px 15px;
+}
+
+.app-foot {
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.container {
+    width: 1065px;
+    height: 575px;
+    position: relative;
+    top: 110px;
+    margin: 0 auto
+}
+
+.container .main {
+    width: 907px;
+    height: 575px;
+    background: url(../img/case/body_bg.png) no-repeat
+}
+
+.container .main .check-items {
+    height: 85px;
+    padding-left: 224px;
+    padding-top: 20px
+}
+
+.container .main .check-items li {
+    width: 60px;
+    height: 85px;
+    float: left;
+    margin-right: 24px;
+    cursor: pointer
+}
+
+.container .main .check-items .last-item {
+    margin-left: 58px
+}
+
+.container .main .check-items .item1 {
+    background: url(../img/case/btn1.png) no-repeat
+}
+
+.container .main .check-items .item1.active {
+    background: url(../img/case/btn1_active.png) no-repeat
+}
+
+.container .main .check-items .item2 {
+    background: url(../img/case/btn2.png) no-repeat
+}
+
+.container .main .check-items .item2.active {
+    background: url(../img/case/btn2_active.png) no-repeat
+}
+
+.container .main .check-items .item3 {
+    background: url(../img/case/btn3.png) no-repeat
+}
+
+.container .main .check-items .item3.active {
+    background: url(../img/case/btn3_active.png) no-repeat
+}
+
+.container .main .check-items .item4 {
+    background: url(../img/case/btn4.png) no-repeat
+}
+
+.container .main .check-items .item4.active {
+    background: url(../img/case/btn4_active.png) no-repeat
+}
+
+.container .main .check-items .item5 {
+    background: url(../img/case/btn5.png) no-repeat
+}
+
+.container .main .check-items .item5.active {
+    background: url(../img/case/btn5_active.png) no-repeat
+}
+
+.container .main .content {
+    width: 907px;
+    height: 469px
+}
+
+.container .main .content .left-content {
+    width: 358px;
+    height: 450px;
+    margin-top: 19px;
+    margin-left: 124px;
+    float: left
+}
+
+.container .main .content .left-content li {
+    clear: both;
+    margin: 8px 0
+}
+
+.container .main .content .left-content li label {
+    display: block
+}
+
+.container .main .content .left-content li label > span {
+    display: inline-block;
+    width: 90px;
+    height: 45px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 16px;
+    color: #5c5a5a
+}
+
+.container .main .content .left-content li .input-area {
+    width: 212px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 48px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    /*padding: 0;*/
+}
+
+.container .main .content .left-content li .phone-num {
+    background-image: url(../img/case/input_mobile.png);
+}
+
+.container .main .content .left-content li .check-code {
+    background-image: url(../img/case/input_bianma.png);
+}
+
+.container .main .content .left-content li .verification-code {
+    background-image: url(../img/case/input_yanzhengma.png);
+}
+
+.container .main .content .left-content .btns {
+    margin-top: 40px
+}
+
+.container .main .content .left-content .btns .btn {
+    width: 170px;
+    height: 36px;
+    cursor: pointer
+}
+
+.container .main .content .left-content .btns .login-btn {
+    float: left;
+    background: url(../img/case/btn_denglu.png);
+}
+
+.container .main .content .left-content .btns .login-btn:hover {
+    background: url(../img/case/btn_denglu_hover.png);
+}
+
+.container .main .content .left-content .btns .back-btn {
+    float: right;
+    background: url(../img/case/btn_back.png);
+}
+
+.container .main .content .left-content .btns .back-btn:hover {
+    background: url(../img/case/btn_back_hover.png);
+}
+
+.container .main .content .right-content {
+    width: 310px;
+    height: 370px;
+    margin-top: 99px;
+    margin-right: 55px;
+    float: right
+}
+
+.container .main .content .right-content li {
+    float: left;
+    color: #798490;
+    font-size: 16px;
+    margin: 8px
+}
+
+.container .main .content .right-content .btn {
+    width: 110px;
+    height: 39px;
+    background: url(../img/case/btn_more.png);
+    cursor: pointer;
+    margin: 10px
+}
+
+.container .main .content .right-content .btn:hover {
+    background: url(../img/case/btn_more_hover.png);
+}
+
+.container .qr-code-wrap {
+    width: 140px;
+    height: 208px;
+    position: absolute;
+    top: 44px;
+    right: 0;
+    background: url(../img/case/ewm_bg.png)
+}
+
+.container .qr-code-wrap .qr-code {
+    width: 121px;
+    height: 123px;
+    padding: 12px 9px 0
+}
+
+.container .qr-code-wrap .msg {
+    margin-top: 5px;
+    text-align: center
+}
+
+.container .qr-code-wrap .close-btn {
+    height: 22px;
+    background: #d0d0d0;
+    text-align: center;
+    cursor: pointer
+}
+
+.container .qr-code-wrap .close-btn:hover {
+    color: #fff
+}
+
+.contents >div{
+    display: none;
+}
+.contents >div.active{
+    display: block;
+}
+.list-wrap{
+    width: 80%;
+    margin: 0 10%;
+}
+.list-wrap table{
+    width: 100%;
+}
+
+.table-condition .search-condition{
+    margin-top: 20px;
+}
+.table-condition label{
+    display: inline-block;
+    line-height: 22px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.key-word,
+.law-code,
+.datetimepicker{
+    width: 200px;
+    height: 22px;
+    line-height: 22px;
+}
+.datetimepicker{
+    width: 268px;
+}
+.law-code-label{
+    margin-left: 15px;
+}
+
+.check-btn{
+    width: 60px;
+    height: 26px;
+    margin-left: 38px;
+    vertical-align: top;
+    background: #00A1CB;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*案件列表*/
+.case-list {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.case-list th{
+    border-bottom: 2px solid #ddd;
+}
+.case-list td{
+    padding: 6px;
+}
+.case-list tbody tr td{
+    border-top: 1px solid #ddd;
+}
+
+/*分页*/
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

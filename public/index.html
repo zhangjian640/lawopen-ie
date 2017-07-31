@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/jedate.css">
+</head>
+<body>
+<div>
+    <img class="bg" src="img/index/background2.jpg">
+    <div class="app-head">
+        <div class="logo"><img src="img/index/logo_01.png"/></div>
+        <div class="title"><img src="img/index/title.png"/></div>
+    </div>
+    <div class="app-content">
+        <div class="container">
+            <div class="main">
+                <ul class="check-items">
+                    <li class="item1">
+
+                    </li>
+                    <li class="item2">
+                    </li>
+                    <li class="item3">
+                    </li>
+                    <li class="item4">
+                    </li>
+                    <li class="item5">
+                    </li>
+                    <li class="last-item"><img src="img/case/txt_chaxunxuzhi.png"/></li>
+                </ul>
+                <div class="contents">
+                    <div class="content1 active">
+                        <div class="list-wrap">
+                            <div class="table-condition">
+                                <form action="">
+                                <div class="search-condition">
+                                    <label for="keyWord">决定单位</label>
+                                    <input type="text" id="keyWord" class="key-word">
+                                    <label for="lawCode" class="law-code-label">法律文书编号</label>
+                                    <input type="text" id="lawCode" class="law-code"><br>
+                                </div>
+                                <div class="search-condition">
+                                    <label for="datetimepicker">填发时间</label>
+                                    <input type="text" id="datetimepicker" class="datetimepicker">
+                                    <button class="check-btn">确定</button>
+                                </div>
+                                </form>
+                            </div>
+                            <table id="grid-keep-selection" class="case-list">
+                                <thead>
+                                <tr>
+                                    <th data-column-id="case_id">案件编号</th>
+                                    <th data-column-id="case_name">案件名称</th>
+                                    <th data-column-id="case_desc">案件描述</th>
+                                    <th data-column-id="case_place">案发地点</th>
+                                    <th data-column-id="case_time">案发时间</th>
+                                </tr>
+                                </thead>
+                            </table>
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content2">2</div>
+                    <div class="content3">
+                        <div class="content">
+                            <ul class="left-content">
+                                <li><img src="img/case/title_ajcx.png"/></li>
+                                <li>
+                                    <label for="phoneNum">
+                                        <span>手机号码&nbsp;:&nbsp;</span>
+                                        <input type="text" id="phoneNum" v-model="phone" class="input-area phone-num">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="checkCode">
+                                        <span>查询编码&nbsp;:&nbsp;</span>
+                                        <input type="text" id="checkCode" v-model="serial_number"
+                                               class="input-area check-code">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="verificationCode">
+                                        <span>验&nbsp;&nbsp;证&nbsp;&nbsp;码&nbsp;:&nbsp;</span>
+                                        <input type="text" id="verificationCode" class="input-area verification-code">
+                                    </label>
+                                </li>
+                                <li class="btns">
+                                    <div class="btn login-btn" @click="check_in"></div>
+                                    <div class="btn back-btn" @click="searchBack"></div>
+                                </li>
+                            </ul>
+                            <ul class="right-content">
+                                <li>一、查询刑事案件、治安(行政)案件办理状态;</li>
+                                <li>二、查询涉案财物措施、照片;</li>
+                                <li>三、查询案件投诉或直接投诉反馈结果;</li>
+                                <li>四、请妥善管理您的案件查询编码,勿轻易删除或转告他人;</li>
+                                <li>五、网上查询结果仅供参考,请以公安机关实际案卷材料为准;</li>
+                                <li class="btn">
+                                    <div class="more-btn"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content4"></div>
+                    <div class="content5">5</div>
+                </div>
+            </div>
+            <ul class="qr-code-wrap">
+                <li class="qr-code"><img src="img/case/ewm.png" alt="二维码"></li>
+                <li class="msg">扫一扫,关注公众号,获取信息更方便!</li>
+                <li class="close-btn" @click="closeQR">关闭</li>
+            </ul>
+        </div>
+    </div>
+    <div class="app-foot">
+        湖北省公安厅&nbsp;版权所有&nbsp;技术支持&nbsp;:&nbsp;北科软件&nbsp;&nbsp;版权所有&nbsp;&nbsp;未经协议授权禁止转载
+    </div>
+</div>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery.jedate.min.js"></script>
+<script>
+  $('.check-items li').click(function () {
+    var index = $(this).index();
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.contents >div').removeClass('active').eq(index).addClass('active');
+  });
+
+  //  $("#grid-keep-selection").bootgrid({
+  //    ajax: true,
+  //    post: function () {
+  //        /* To accumulate custom parameter with the request object */
+  //      return {
+  //        id: "b0df282a-0d67-40e5-8558-c9e93b7befed"
+  //      };
+  //    },
+  //    url: "/api/case"
+  ////    multiSelect: true,
+  ////    rowSelect: true,
+  ////    keepSelection: true,
+  //  });
+  $.jeDate("#datetimepicker", {
+    ishmsVal: false,
+    maxDate: $.nowDate({DD: 0}),
+    format: "YYYY-MM-DD hh:mm",
+    zIndex: 3000
+  });
+
+</script>
+
+</body>
+</html>
