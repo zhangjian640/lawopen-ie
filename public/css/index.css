@@ -6,6 +6,17 @@
     left: 0;
     z-index: -100;
 }
+.app-foot {
+    width: 800px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
 .swiper-container {
     width: 1200px;
     height: 546px;
