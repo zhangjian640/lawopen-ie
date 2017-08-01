@@ -38,13 +38,20 @@
                                 <form action="">
                                 <div class="search-condition">
                                     <label for="keyWord">决定单位</label>
-                                    <input type="text" id="keyWord" class="key-word">
+                                    <select name="keyWord" id="keyWord" class="key-word">
+                                        <option value="">xxx</option>
+                                        <option value="">111</option>
+                                        <option value="">222</option>
+                                        <option value="">333</option>
+                                    </select>
                                     <label for="lawCode" class="law-code-label">法律文书编号</label>
                                     <input type="text" id="lawCode" class="law-code"><br>
                                 </div>
                                 <div class="search-condition">
-                                    <label for="datetimepicker">填发时间</label>
-                                    <input type="text" id="datetimepicker" class="datetimepicker">
+                                    <label for="datetimepicker1">填发时间</label>
+                                    <input type="text" id="datetimepicker1" class="datetimepicker">
+                                    -
+                                    <input type="text" id="datetimepicker2" class="datetimepicker">
                                     <button class="check-btn">确定</button>
                                 </div>
                                 </form>
@@ -157,10 +164,16 @@
   ////    rowSelect: true,
   ////    keepSelection: true,
   //  });
-  $.jeDate("#datetimepicker", {
+  $.jeDate("#datetimepicker1", {
     ishmsVal: false,
     maxDate: $.nowDate({DD: 0}),
-    format: "YYYY-MM-DD hh:mm",
+    format: "YYYY-MM-DD",
+    zIndex: 3000
+  });
+  $.jeDate("#datetimepicker2", {
+    ishmsVal: false,
+    maxDate: $.nowDate({DD: 0}),
+    format: "YYYY-MM-DD",
     zIndex: 3000
   });
 

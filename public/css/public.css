@@ -5,7 +5,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: -100;
 }
 
 .app-head {
@@ -17,6 +17,18 @@ body{
     right: 0;
     top: 76px;
     margin: 0 auto;
+}
+.app-foot {
+    width: 800px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    z-index: -10;
 }
 
 .logo {
@@ -276,8 +288,11 @@ body{
     height: 22px;
     line-height: 22px;
 }
+.key-word{
+    vertical-align: top;
+}
 .datetimepicker{
-    width: 268px;
+    /*width: 268px;*/
 }
 .law-code-label{
     margin-left: 15px;
@@ -286,7 +301,7 @@ body{
 .check-btn{
     width: 60px;
     height: 26px;
-    margin-left: 38px;
+    margin-left: 20px;
     vertical-align: top;
     background: #00A1CB;
     outline: none;
