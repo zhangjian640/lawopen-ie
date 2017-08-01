@@ -24,7 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/banner', banner);
 app.use('/index', index);
-// app.use('/api', public.publicApi);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
